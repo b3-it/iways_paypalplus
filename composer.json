@@ -15,10 +15,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/b3-it/PayPal-PHP-SDK.git",
-            "require":{
-                "composer/installers": "~1.0"
-            }
+            "url": "https://github.com/b3-it/PayPal-PHP-SDK.git"
         }
     ]
 }
