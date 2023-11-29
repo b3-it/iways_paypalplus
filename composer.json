@@ -9,5 +9,13 @@
             "email": "lf@kirchbergerknorr.de"
         }
     ],
-    "require": {}
+    "require": {
+        "b3-it/paypal-php-sdk": "1.0"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/b3-it/PayPal-PHP-SDK.git"
+        }
+    ]
 }
