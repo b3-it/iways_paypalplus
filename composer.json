@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "b3-it/paypal-php-sdk": "1.0"
+        "b3-it/paypal-php-sdk": "dev-master"
     },
     "repositories": [
         {
