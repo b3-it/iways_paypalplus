@@ -14,7 +14,7 @@
         "magento-hackathon/magento-composer-installer": "^3.0.6"
     },
     "require": {
-        "b3-it/paypal-php-sdk": "1.0"
+        "b3-it/paypal-php-sdk": "^1.0"
     },
     "repositories": [
         {
