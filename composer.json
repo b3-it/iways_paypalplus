@@ -30,7 +30,6 @@
             ["app/etc/modules/Iways_PayPalPlus.xml", "app/etc/modules/Iways_PayPalPlus.xml"],
             ["app/locale/de_DE/Iways_PayPalPlus.csv", "app/locale/de_DE/Iways_PayPalPlus.csv"],
             ["skin/frontend/base/default/css/iways-paypalplus.css", "skin/frontend/base/default/css/iways-paypalplus.css"],
-            ["skin/frontend/base/default/css/images/iways", "skin/frontend/base/default/css/images/iways"]
         ]
     }
 }
