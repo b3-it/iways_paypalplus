@@ -22,14 +22,6 @@
             "url": "https://github.com/b3-it/PayPal-PHP-SDK.git"
         }
     ],
-    "scripts": {
-        "post-install-cmd": [
-            "cp -rf vendor/b3-it/paypal-php-sdk/lib/* lib/"
-        ],
-        "post-update-cmd": [
-            "cp -rf vendor/b3-it/paypal-php-sdk/lib/* lib/"
-        ]
-    },
     "extra": {
         "map": [
             ["app/code/community/Iways/PayPalPlus", "app/code/local/Iways/PayPalPlus"],
