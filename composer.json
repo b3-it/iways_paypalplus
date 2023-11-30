@@ -1,5 +1,6 @@
 {
     "name": "b3-it/iways_paypalplus",
+    "license": "OSL-3.0",
     "version": "1.0",
     "description": "Integrates PayPal Plus into Magento",
     "type": "magento-module",
@@ -9,6 +10,9 @@
             "email": "lf@kirchbergerknorr.de"
         }
     ],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "^3.0.6"
+    },
     "require": {
         "b3-it/paypal-php-sdk": "1.0"
     },
@@ -24,6 +28,18 @@
         ],
         "post-update-cmd": [
             "cp -rf vendor/b3-it/paypal-php-sdk/lib/* lib/"
+        ]
+    },
+    "extra": {
+        "map": [
+            ["app/code/community/Iways/PayPalPlus", "app/code/local/Iways/PayPalPlus"],
+            ["app/design/adminhtml/default/default/template/paypalplus", "app/design/adminhtml/default/default/template/paypalplus"],
+            ["app/design/frontend/base/default/layout/iways_paypalplus.xml", "app/design/frontend/base/default/layout/iways_paypalplus.xml"],
+            ["app/design/frontend/base/default/layout/template/paypalplus", "app/design/frontend/base/default/layout/template/paypalplus"],
+            ["app/etc/modules/Iways_PayPalPlus.xml", "app/etc/modules/Iways_PayPalPlus.xml"],
+            ["app/locale/de_DE/Iways_PayPalPlus.csv", "app/locale/de_DE/Iways_PayPalPlus.csv"],
+            ["skin/frontend/base/default/css/iways-paypalplus.css", "skin/frontend/base/default/css/iways-paypalplus.css"],
+            ["skin/frontend/base/default/css/images/iways", "skin/frontend/base/default/css/images/iways"]
         ]
     }
 }
