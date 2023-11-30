@@ -12,6 +12,6 @@ Run the following command:
 
 
 ```
-composer require kirchbergerknorr/iways_paypalplus ~1.4.5
+composer require b3-it/iways_paypalplus 1.0
 ```
 
