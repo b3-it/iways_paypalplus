@@ -6,12 +6,27 @@ Integrates PayPal Plus into Magento
 
 ## Installation via Composer
 
-If you do not know what Composer is, please first read [this](https://getcomposer.org/doc/00-intro.md).
+composer.json:
 
-Run the following command:
+```json
+"repositories": [
+ {
+  "type": "vcs",
+  "url": "https://github.com/b3-it/iways_paypalplus.git"
+ },
+ {
+  "type": "vcs",
+  "url": "https://github.com/b3-it/PayPal-PHP-SDK.git"
+ }
+],
+"require": {
+  "b3-it/iways_paypalplus": "dev-master"
+}
+```
 
+Command ausführen:
 
 ```
-composer require b3-it/iways_paypalplus 1.0
+composer update
 ```
 
