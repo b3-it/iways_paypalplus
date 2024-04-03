@@ -1,7 +1,7 @@
 {
     "name": "b3-it/iways_paypalplus",
     "license": "OSL-3.0",
-    "version": "1.1",
+    "version": "1.2",
     "description": "Integrates PayPal Plus into Magento",
     "type": "magento-module",
     "authors": [
