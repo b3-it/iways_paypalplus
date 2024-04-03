@@ -35,8 +35,8 @@
     <?php echo Mage::helper('iways_paypalplus')->__('Please transfer the invoice amount to the given account within the payment deadline.'); ?>{{pdf_row_separator}}
     {{pdf_row_separator}}
     <?php foreach ($_specificInfo as $_label => $_value):?>
-        <?php echo $_label ?>: <?php echo implode($this->getValueAsArray($_value), ' ')?>{{pdf_row_separator}}
+        <?php echo $_label ?>: <?php echo implode( ' ', $this->getValueAsArray($_value))?>{{pdf_row_separator}}
     <?php endforeach; ?>
 <?php endif;?>
 
-<?php echo implode($this->getChildPdfAsArray(), '{{pdf_row_separator}}') ?>
+<?php echo implode( '{{pdf_row_separator}}', $this->getChildPdfAsArray()) ?>
