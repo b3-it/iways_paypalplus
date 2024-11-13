@@ -38,6 +38,7 @@ class Iways_PayPalPlus_Helper_Data extends Mage_Payment_Helper_Data
         if (Mage::getStoreConfig('iways_paypalplus/dev/debug')) {
             Mage::getSingleton('core/session')->addWarning($e->getData());
         }
+        Mage::logException($e);
     }
 
     /**
