@@ -38,7 +38,17 @@ class Iways_PayPalPlus_Helper_Data extends Mage_Payment_Helper_Data
         if (Mage::getStoreConfig('iways_paypalplus/dev/debug')) {
             Mage::getSingleton('core/session')->addWarning($e->getData());
         }
-        Mage::logException($e);
+
+        if ($e instanceOf \PayPal\Exception\PayPalConnectionException) {
+            Mage::log(
+                $e->__toString() . "\n"
+                . "Data: ". $e->getData(),
+                Zend_Log::ERR,
+                Mage::getStoreConfig('dev/log/exception_file'),
+            );
+        } else {
+            Mage::logException($e);
+        }
     }
 
     /**
